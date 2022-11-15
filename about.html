@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first website!</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+  <script> 
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+      });
+    });
+    $(document).ready(function(){
+      $("#bt").click(function(){
+        $("#panel").hide("slow");
+      });
+    });
+    </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li>Sobre</li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h2>Sobre</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </section>
+
+  <div style="cursor: pointer;  " id="flip"> <h3>Click aqui para a mensagem de boas vindas!</h3> </div>
+  <div id="panel"> <h4> Olá, seja bem vindo !! Obrigado por acessar minha pagina!</h4> </div>
+
+  <button style="cursor: pointer;  " id="bt" >Limpar</button>
+  
+    <style> 
+    #panel, #flip {
+      color: white;
+      padding: 5px;
+      text-align: center;
+      background-color: black;
+      border: solid 1px #c3c3c3;
+    }
+    
+    #panel {
+      padding: 50px;
+      display: none;
+    }
+    button#bt {
+    margin: 112px 900px;
+    padding: 10px 31px;
+    color: darkblue;
+}
+    </style>
+    </head>
+    
+     
+  
+    
+</body>
+</html>
